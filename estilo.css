@@ -2,11 +2,13 @@
 *
 *@author Diego Nonato
 *@version 0.1
+*
 */
 
 /*===================Layout=====================*/
 html, body, .capa {
 	height: 100%;
+	overflow: auto;
 }
 
 body {	
@@ -76,9 +78,7 @@ nav.navbar-transparente {
 	color: #fff;
 	border-radius: 500px;
 	-webkit-border-radius: 500px;	
-	-moz-border-radius: 500px;
-	padding: 10px 35px;
-	margin: 0px 20px;
+	-moz-border-radius: 500px;	
 	text-transform: uppercase;	
 	transition: background 0.4s, color 0.4s;
 }
@@ -103,17 +103,17 @@ nav.navbar-transparente {
 
 /* -------------- Serviço ------------------- */
 
-#servicos{
+#servicos {
 	background-color: #fff;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.albuns{
+.albuns {
 	padding: 10px 0px 10px 0px;
 }
 
-/* -------------- recursos ------------------- */
+/* -------------- Recursos ------------------- */
 
 #recursos {	
 	padding-top: 20px;
@@ -143,8 +143,7 @@ footer {
 
 /*===================Tipografia=====================*/
 
-h1 {
-	font-size: 100px;
+h1 {	
 	font-weight: 900;
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
@@ -174,4 +173,40 @@ h3 {
 
 #recursos h3 {
 	color: #9bf0e1;
+}
+
+/*=================== Media Queries =====================*/
+/* xs < 768 */
+
+@media screen and (max-width: 767px){
+	h1 {	
+	font-size: 50px;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* sm */
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 70px;
+	}
+}
+
+/* md */
+
+@media screen and (min-width: 992px) {
+	h1 {
+		font-size: 80px;
+	}
+}
+
+/* lg */
+
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 100px;
+	}
 }
